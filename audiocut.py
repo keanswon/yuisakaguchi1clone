@@ -6,7 +6,7 @@ import os
 def get_audio_clip(audiopath, start_time, end_time):
     with AudioFileClip(audiopath) as af:
         clip = af.subclipped(start_time, end_time)
-        clip.write_audiofile('killshot_cut.mp3')
+        clip.write_audiofile('tekitcut.mp3')
 
-audiopath = os.path.join(os.getcwd(), "audio", "killshot.mp3")
-get_audio_clip(audiopath, 70, 90)
+audiopath = os.path.join(os.getcwd(), "audio", "tekit.mp3")
+get_audio_clip(audiopath, 0, 20)
