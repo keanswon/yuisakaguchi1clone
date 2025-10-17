@@ -24,39 +24,6 @@ def separate_movie(infile, outpath, starts, player):
 
     video.close()
 
-# LEBRON JAMES CLIPS
-# starts = [0, 3, 6, 9, 12, 20, 25, 30, 37, 40, 46, 52, 57, 65, 71, 76, 78, 82, 88, 92]
-# inpath = os.path.join(os.getcwd(), "videos", "LEBRON", "lebronclips.mp4")
-# outpath = os.path.join(os.getcwd(), "videos", "LEBRON")
-# separate_movie(inpath, outpath, starts)
-
-# CURRY CLIPS
-# starts = [0, 5, 8, 13, 19, 25, 31, 34, 39, 44, 54, 60, 64, 69, 72, 78, 85, 88]
-# inpath = os.path.join(os.getcwd(), "videos", "CURRY", "curryclipped.mp4")
-# outpath = os.path.join(os.getcwd(), "videos", "CURRY")
-# separate_movie(inpath, outpath, starts)
-
-# WESTBROOK CLIPS
-
-# starts = [0, 2, 5, 7, 12, 15, 20, 22, 26, 30, 35, 36, 40, 42, 45, 48, 52, 57, 58, 60, 64, 68, 73, 77, 80, 83, 87, 90]
-# inpath = os.path.join(os.getcwd(), "videos", "WESTBROOK", "westbrook_clips.mp4")
-# outpath = os.path.join(os.getcwd(), "videos", "WESTBROOK")
-# separate_movie(inpath, outpath, starts, "westbrook")
-
-# DURANT CLIPS
-
-# starts = [0, 4, 9, 14, 17, 21, 26, 29, 32, 38, 41, 44, 49, 56, 60, 66, 68, 72, 76, 82, 85, 94]
-# inpath = os.path.join(os.getcwd(), "videos", "DURANT", "durant_clipped.mp4")
-# outpath = os.path.join(os.getcwd(), "videos", "DURANT")
-# separate_movie(inpath, outpath, starts, "durant")
-
-# starts = [0, 4, 7, 12, 17, 22, 27, 32, 36]
-# inpath = os.path.join(os.getcwd(), "videos", "ASSIST", "assistclipped.mp4")
-# outpath = os.path.join(os.getcwd(), "videos", "ASSIST")
-# separate_movie(inpath, outpath, starts, "assists")
-
-
-
 def download_1080p_video(url, output_path="./"):
     ydl_opts = {
         'format': 'best[height<=1080][ext=mp4]',  # Best quality up to 1080p, mp4 format
@@ -74,12 +41,7 @@ def download_1080p_video(url, output_path="./"):
 # video_url = input("url>")
 # download_1080p_video(video_url)
 
-# starts = [0, 7, 10, 12, 16, 19, 22, 26, 32, 35, 38, 41, 45, 49, 52, 55]
-# inpath = os.path.join(os.getcwd(), "videos", "JAMES", "lebrondunks.mp4")
-# outpath = os.path.join(os.getcwd(), "videos", "JAMES")
-# separate_movie(inpath, outpath, starts, "lebrondunks")
-
-starts = [0, 4, 12, 14, 16, 21, 26, 29]
-inpath = os.path.join(os.getcwd(), "videos", "CELLY", "celly.mp4")
-outpath = os.path.join(os.getcwd(), "videos", "CELLY")
-separate_movie(inpath, outpath, starts, "celly")
+starts = [0, 2, 7, 13, 19, 21, 26, 30, 35, 41, 46, 51, 54, 58, 61, 66, 72, 75, 80, 85, 89, 93, 96, 100, 107, 112, 116]
+inpath = os.path.join(os.getcwd(), "videos", "CURRY", "curryclipped.mp4")
+outpath = os.path.join(os.getcwd(), "videos", "CURRY")
+separate_movie(inpath, outpath, starts, "curry")
